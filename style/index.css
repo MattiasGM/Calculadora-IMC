@@ -5,6 +5,9 @@
     --cor-primary: #f1f1f1;
     --cor-fundo: #392e69;
     --cor-sombra: #0f092b;
+
+    --cor-correct: #44d480;
+    --cor-incorrect: #dd9367;
 }
 
 body {
@@ -77,3 +80,16 @@ main section form button {
     main section form button:hover {
         background-color: var(--cor-sombra);
     }
+
+#results {
+    padding: 10px;
+    margin: 10px;
+}
+
+.correct {
+    background-color: var(--cor-correct);
+}
+
+.error {
+    background-color: var(--cor-incorrect);
+}
