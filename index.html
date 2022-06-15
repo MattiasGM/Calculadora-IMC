@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="./src/App.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Calculadora IMC</h1>
+    </header>
+    <main>
+        <article>
+            <h1>Tabela IMC</h1>
+            <table>
+                <tr>
+                    <th>IMC</th>
+                    <th>Diagnóstico</th>
+                </tr>
+                <tr>
+                    <td>menor que 18,5</td>
+                    <td>baixo peso</td>
+                </tr>
+                <tr>
+                    <td>entre 18,5 e 24,9</td>
+                    <td>intervalo normal</td>
+                </tr>
+                <tr>
+                    <td>entre 25 e 29,9</td>
+                    <td>sobrepeso</td>
+                </tr>
+                <tr>
+                    <td>entre 30 e 34,9</td>
+                    <td>obesidade classe I</td>
+                </tr>
+                <tr>
+                    <td>entre 35 e 39,9</td>
+                    <td>obesidade classe II</td>
+                </tr>
+                <tr>
+                    <td>maior que 40</td>
+                    <td>obesidade classe III</td>
+                </tr>
+            </table>
+        </article>
+        <section>
+            <h1>Calcule seu IMC</h1>
+            <form action="">
+                <label>
+                    Peso: 
+                    <input type="text" id="formPeso">
+                </label>
+                <label>
+                    Altura:
+                    <input type="text" id="formAltura">
+                </label>
+                <button type="button" id="formButton">Calcular</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Curso de JavaScript e TypeScript do básico ao avançado - Atualizado para 2022</p>
+    </footer>
+</body>
+</html>
