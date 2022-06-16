@@ -17,11 +17,11 @@ function App() {
     }
 
     function getDiagnosticImc(imc) {
-        const grau = ['Obesidade grau III', 'Obesidade grau II', 'Obesidade grau I', 'Sobrepeso', 'Normal', 'Abaixo do peso', 'alien']
-        const nivel = [39.9, 34.9, 29.9, 24.9, 18.5]
+        const grau = ['Obesidade grau III', 'Obesidade grau II', 'Obesidade grau I', 'Sobrepeso', 'Normal', 'Abaixo do peso']
+        const nivel = [39.9, 34.9, 29.9, 24.9, 18.5, 0]
 
         for(let pos in nivel) {
-            return imc >= nivel[pos] ? grau[6] : grau[pos]
+            if(imc >= nivel[pos]) return grau[pos]
         }
     }
 }
